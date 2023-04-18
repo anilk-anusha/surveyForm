@@ -12,13 +12,22 @@
     <h2 class="subtitle">Thank you for taking the time to help us improve the platform</h2>
     <form method="post" action='https://register-demo.freecodecamp.org'>
     <fieldset>
+        <div class="form-group">
         <label for="first-name">Name <input id="first-name" name="first-name" type="text" required /></label>
+        </div>
+        <div class="form-group">
         <label for="email">Email <input id="email" name="email" type="email" required /></label>
+        </div>
+        <div class="form-group">
         <label for="age">Age(optional) <input id="age" type="number" name="age" min="18" max="120" required></label>
+        </div>
+        <div class="form-group">
         <p for="recommend">Would you recommend freeCodeCamp to a friend?</p>
         <label for="full-recommend"> <input id="recommend" type="radio" name="recommend">Definitely</label>
         <label for="med-recommend"> <input id="recommend" type="radio" name="recommend">Maybe</label>
         <label for="low-recommend"> <input id="recommend" type="radio" name="recommend">Not Sure</label>
+        </div>
+        <div class="form-group">
         <label for="referrer">What is your favorite feature of freeCodeCamp?
         <select id="referrer" name="referrer">
             <option value="">Select an option</option>
@@ -28,6 +37,8 @@
             <option value="4">Open Source</option>
         </select>
         </label>
+        </div>
+        <div class="form-group">
         <p>What would you like to see improved? (Check all that apply)</p>
         <label for="front-end-projects"><input id="front-end-projects" type="checkbox" name="front-end-projects" class="inline" />Front-end Projects </label>
         <label for="back-end-projects"><input id="back-end-projects" type="checkbox"  name="back-end-projects" class="inline" />Back-end Projects </label>
@@ -40,9 +51,12 @@
         <label for="wiki"><input id="wiki" type="checkbox"  name="wiki" class="inline" />Wiki </label>
         <label for="forum"><input id="forum" type="checkbox" name="forum" class="inline" />Forum </label>
         <label for="additional-courses"><input id="additional-courses" type="checkbox" name="additional-courses" class="inline"/>Additional Courses </label>
+        </div>
+        <div class="form-group">
         <label for="comments">Any comments or suggestions?
         <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
         </label>
+        </div>  
     </fieldset>
     <input type="submit" value="Submit" />
     </form>

@@ -12,7 +12,21 @@
     <h2 class="subtitle">Thank you for taking the time to help us improve the platform</h2>
     <form method="post" action='https://register-demo.freecodecamp.org'>
     <fieldset>
-        
+        <label for="first-name">Name <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Email <input id="email" name="email" type="email" required /></label>
+        <label for="age">Age(optional) <input id="age" type="number" name="age" min="18" max="120" required></label>
+        <p for="recommend">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="full-recommend"> <input id="recommend" type="radio" name="recommend">Definitely</label>
+        <label for="med-recommend"> <input id="recommend" type="radio" name="recommend">Maybe</label>
+        <label for="low-recommend"> <input id="recommend" type="radio" name="recommend">Not Sure</label>
+        <label for="referrer">What is your favorite feature of freeCodeCamp?
+        <select id="referrer" name="referrer">
+            <option value=""></option>
+            <option value="1"></option>
+            <option value="3"></option>
+        </select>
+        </label>
+    
     </fieldset>
 
 
